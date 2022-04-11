@@ -4,4 +4,19 @@
   @include col;
   @include center;
   width: 100%;
+  gap: 1%;
+  &Top {
+    @include col;
+    @include center;
+    width: 98%;
+    margin: 1% 0%;
+    background: blue;
+  }
+  &Bottom {
+    width: 94%;
+    margin: 1% 0%;
+    @include row;
+    @include center;
+    gap: 1%;
+  }
 }

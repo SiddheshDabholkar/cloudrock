@@ -1,0 +1,54 @@
+@import "/src/styles/colors.scss";
+@import "/src/styles/mixin.scss";
+
+.Table {
+  @include col;
+  @include center;
+  width: 98%;
+  &Head {
+    width: 100%;
+    @include row;
+    align-items: center;
+    padding: 0px 0px 10px 0px;
+    justify-content: space-between;
+    border-bottom: 1px solid $transBlue;
+    &Name {
+      font-size: 18px;
+      color: $blackText;
+    }
+    &Button {
+      color: $lightBlue;
+      padding: 5px 8px;
+      background: $transBlue;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+  }
+  &Row {
+    width: 96%;
+    padding: 12px 0px;
+    @include row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $transBlue;
+    &Left {
+      font-size: 12px;
+      color: $blackText;
+    }
+    &Right {
+      @include row;
+      @include center;
+      gap: 8px;
+      &One {
+        font-size: 12px;
+        background: #f2f2f2d9;
+        border-radius: 10px;
+        padding: 4px 7px;
+      }
+      &Two {
+        font-size: 12px;
+        color: $green;
+      }
+    }
+  }
+}

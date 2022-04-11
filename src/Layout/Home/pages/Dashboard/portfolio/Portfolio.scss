@@ -1,0 +1,9 @@
+@import "/src/styles/colors.scss";
+@import "/src/styles/mixin.scss";
+
+.Portfolio {
+  @include col;
+  @include center;
+  width: 100%;
+  background: orange;
+}
