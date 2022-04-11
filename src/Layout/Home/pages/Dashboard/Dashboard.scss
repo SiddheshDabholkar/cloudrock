@@ -1,0 +1,7 @@
+@import "/src/styles/mixin.scss";
+
+.Dashboard {
+  @include col;
+  @include center;
+  width: 100%;
+}
