@@ -12,9 +12,15 @@ export default function Dashboard() {
         <Portfolio />
       </div>
       <div className="DashboardBottom">
-        <Stocks />
-        <Options />
-        <Tips />
+        <div className="DashboardBottomCont">
+          <Stocks />
+        </div>
+        <div className="DashboardBottomCont">
+          <Options />
+        </div>
+        <div className="DashboardBottomCont">
+          <Tips />
+        </div>
       </div>
     </div>
   );

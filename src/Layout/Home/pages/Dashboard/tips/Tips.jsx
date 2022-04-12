@@ -13,9 +13,6 @@ export default function Tips() {
           feugiat neque elit id risus. Sed dolor eros, ullamcorper nec libero
           vitae, malesuada fringilla eros. Sed ultrices, mauris ut porta cursus,
           mauris dolor vulputate dolor, sed accumsan purus eros non sem.
-          Pellentesque nec mi nisl. Cras rhoncus ac elit a varius. In urna nunc,
-          scelerisque vel enim malesuada, varius ullamcorper quam. Etiam rhoncus
-          fringilla odio sed fermentum.
         </div>
       </div>
     </div>

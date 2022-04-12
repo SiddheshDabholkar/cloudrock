@@ -16,6 +16,16 @@
     margin: 1% 0%;
     @include row;
     @include center;
-    gap: 6%;
+    flex-wrap: wrap;
+    &Cont {
+      width: 30%;
+      @media (max-width: 1000px) {
+        width: 45%;
+      }
+      @media (max-width: 700px) {
+        margin-top: 5%;
+        width: 85%;
+      }
+    }
   }
 }
