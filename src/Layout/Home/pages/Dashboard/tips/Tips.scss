@@ -3,7 +3,26 @@
 
 .Tips {
   @include col;
-  @include center;
+  justify-content: center;
   width: 100%;
-  background: green;
+  height: 100%;
+  text-align: start;
+  &Head {
+    color: #000;
+    font-size: 22px;
+    font-weight: bolder;
+  }
+  &Card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 20px;
+    &Top {
+      font-size: 20px;
+      color: #000;
+    }
+    &Bottom {
+      font-size: 15px;
+      color: gray;
+    }
+  }
 }
