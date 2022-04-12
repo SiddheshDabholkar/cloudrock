@@ -1,8 +1,12 @@
 @import "/src/styles/mixin.scss";
+@import "/src/styles/colors.scss";
 
 .Footer {
   @include row;
   @include center;
   width: 100%;
-  background: #4141ff;
+  color: $white;
+  background: $blue;
+  padding: 2% 0%;
+  font-size: 14px;
 }
