@@ -15,7 +15,9 @@
     width: 94%;
     margin: 1% 0%;
     @include row;
-    @include center;
+    // @include center;
+    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     &Cont {
       width: 30%;
@@ -23,9 +25,13 @@
         width: 45%;
       }
       @media (max-width: 700px) {
+        @include center;
         margin-top: 5%;
         width: 85%;
       }
+    }
+    @media (max-width: 700px) {
+      @include center;
     }
   }
 }
