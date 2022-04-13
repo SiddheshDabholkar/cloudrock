@@ -1,0 +1,49 @@
+@import "/src/styles/colors.scss";
+@import "/src/styles/mixin.scss";
+
+.Carousel {
+  overflow: hidden;
+  width: 100% !important;
+  height: 100% !important;
+  &Inner {
+    width: 100% !important;
+    white-space: nowrap;
+    transition: transform 0.3s;
+    &Item {
+      display: inline-flex;
+      white-space: normal;
+      height: 100% !important;
+    }
+  }
+  &Buttons {
+    margin-top: 10px;
+    transition: 0.3s ease-in-out;
+    @include row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    &Next {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    .Active {
+      width: 40px;
+      margin: 2px;
+      cursor: pointer;
+      border: none;
+      height: 3px;
+      border-radius: 5px;
+      background: $blue;
+    }
+    .InActive {
+      height: 3px;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 30px;
+      border: none;
+      margin: 2px;
+      background: $lightBlue;
+    }
+  }
+}

@@ -5,6 +5,11 @@
   @include center;
   width: 100%;
   gap: 1%;
+  &Row {
+    width: 100%;
+    @include row;
+    @include center;
+  }
   &Top {
     @include col;
     @include center;
@@ -15,11 +20,11 @@
     width: 94%;
     margin: 1% 0%;
     @include row;
-    // @include center;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     flex-wrap: wrap;
     &Cont {
+      min-height: 100%;
       width: 30%;
       @media (max-width: 1000px) {
         width: 45%;
